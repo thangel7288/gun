@@ -1,0 +1,36 @@
+.sidebar {
+    background-color: #f39c12; /* Un naranja */
+    color: white;
+    width: 250px;
+    padding: 1rem;
+}
+
+.sidebar h3 {
+    font-size: 1.4em;
+    margin-bottom: 1rem;
+    color: white;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+    padding-bottom: 0.5rem;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 1.5rem;
+}
+
+.sidebar ul li a {
+    color: white;
+    display: block;
+    padding: 0.7rem 0;
+    transition: color 0.3s ease;
+}
+
+.sidebar ul li a:hover {
+    color: #e67e22; /* Un tono más claro al pasar el ratón */
+}
+
+.sidebar h3:last-child,
+.sidebar ul:last-child {
+    margin-bottom: 0;
+}

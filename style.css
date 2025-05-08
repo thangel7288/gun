@@ -1,0 +1,180 @@
+/* Variables para colores (fácil modificación) */
+:root {
+    --primary-color: #000000;
+    --secondary-color: #246355;
+    --text-color: #333;
+    --light-gray: #f8f9fa;
+    --border-color: #ddd;
+}
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+}
+
+body {
+    background-color: var(--light-gray); /* Puedes dejar este como un color de respaldo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: var(--text-color);
+    background-position: center; /* No es necesario repetirlo */
+    background-image: url('https://wallpapers.com/images/hd/podcast-background-1920-x-1080-gg9kbtvo5htz5xhu.jpg'); /* Reemplaza con tu URL */
+    background-size: cover; /* La imagen cubrirá todo el elemento */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    /* min-height: 100vh; Ya está declarado arriba */
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    padding: 2px;
+    position: relative; /* Necesario para posicionar los pseudo-elementos */
+    padding: 20px; /* Asegúrate de que haya espacio para los iconos */
+    
+}
+
+.auth-form {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: rgb(255, 255, 255);
+    border: 2px solid black;
+}
+
+.auth-form h1 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    color: var(--primary-color);
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: border 0.3s;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
+
+.btn {
+    width: 100%;
+    padding: 0.8rem;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    
+}
+
+.btn:hover {
+    background-color: var(--secondary-color);
+}
+
+.form-footer {
+    margin-top: 1.5rem;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.toggle-form {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.toggle-form:hover {
+    text-decoration: underline;
+}
+
+/* Clase para ocultar elementos */
+.hidden {
+    display: none;
+}
+.forgot-password {
+    margin-top: 1rem;
+    text-align: center; /* Centra el enlace */
+    font-size: 0.9rem;
+}
+
+.forgot-password a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.forgot-password a:hover {
+    text-decoration: underline;
+}
+
+
+.social-icons {
+    position: fixed; /* Se fija a la ventana del navegador */
+    bottom: 10px; /* Ajusta la distancia desde la parte inferior */
+    right: 10px; /* Ajusta la distancia desde la derecha */
+    display: flex; /* Para que los iconos se alineen horizontalmente */
+    gap: 10px; /* Espacio entre los iconos */
+    z-index: 10; /* Asegura que estén por encima de otros elementos si es necesario */
+}
+
+.social-icons img {
+    width: 24px; /* Ajusta el tamaño de los iconos */
+    height: 24px; /* Ajusta el tamaño de los iconos */
+    opacity: 0.7; /* Opcional: para hacerlos un poco transparentes */
+    transition: opacity 0.3s ease-in-out; /* Transición suave al pasar el ratón */
+}
+
+.social-icons img:hover {
+    opacity: 1; /* Hacerlos completamente opacos al pasar el ratón */
+}
+
+.social-icons a {
+    display: inline-block; /* Para poder aplicar padding y márgenes */
+    padding: 8px; /* Espacio alrededor del icono (ajusta según necesites) */
+    border-radius: 50%; /* Para hacerlo circular como un botón */
+    background-color: transparent; /* Fondo transparente por defecto */
+    transition: background-color 0.3s ease-in-out; /* Transición suave del fondo */
+    cursor: pointer; /* Cambia el cursor a una mano */
+}
+
+.social-icons a:hover {
+    background-color: rgba(0, 0, 0, 0.1); /* Fondo gris claro al pasar el ratón (ajusta el color y la opacidad) */
+}
+
+.social-icons a img {
+    display: block; /* Evita espacios extra debajo de la imagen */
+    width: 24px; /* Ajusta el tamaño de los iconos */
+    height: 24px; /* Ajusta el tamaño de los iconos */
+    opacity: 0.7; /* Opcional: opacidad por defecto */
+    transition: opacity 0.3s ease-in-out; /* Transición suave de la opacidad */
+}
+
+.social-icons a:hover img {
+    opacity: 1; /* Icono completamente opaco al hacer hover */
+}

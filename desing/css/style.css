@@ -1,0 +1,11 @@
+/* Importaciones de los estilos base y de layout */
+@import 'base.css';
+@import 'layout.css';
+
+/* Importaciones de los estilos de los módulos */
+@import 'header.css';
+@import 'sidebar.css';
+@import 'content.css';
+@import 'footer.css';
+
+/* Aquí podrías importar otros archivos CSS para componentes, utilidades, etc. */

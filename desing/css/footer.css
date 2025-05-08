@@ -1,0 +1,22 @@
+footer {
+    background-color: #34495e; /* Un azul más oscuro */
+    color: #ecf0f1;
+    padding: 1.5rem 2rem;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+footer nav {
+    margin-top: 1rem;
+}
+
+footer nav a {
+    color: #ecf0f1;
+    text-decoration: none;
+    margin: 0 1rem;
+    transition: color 0.3s ease;
+}
+
+footer nav a:hover {
+    color: #f39c12; /* El naranja de la barra lateral */
+}

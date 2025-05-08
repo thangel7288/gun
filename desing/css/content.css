@@ -1,0 +1,51 @@
+.content {
+    padding: 2rem;
+    background-color: #ecf0f1; /* Un gris claro */
+}
+
+.content h1 {
+    font-size: 2.2em;
+    margin-bottom: 1.5rem;
+    color: #2c3e50;
+}
+
+.podcast-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+}
+
+.podcast-item {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.podcast-item h4 {
+    font-size: 1.3em;
+    margin-bottom: 0.5rem;
+    color: #34495e;
+}
+
+.podcast-item p {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.podcast-item button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.podcast-item button:hover {
+    background-color: #0056b3;
+}
