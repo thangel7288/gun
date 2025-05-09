@@ -1,12 +1,12 @@
 .content {
     padding: 2rem;
-    background-color: #ecf0f1; /* Un gris claro */
+    background-color: #3d90a5; /* Un gris claro */
 }
 
 .content h1 {
     font-size: 2.2em;
     margin-bottom: 1.5rem;
-    color: #2c3e50;
+    color: #d1e9bd;
 }
 
 .podcast-list {

@@ -3,39 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tu Aplicación de Podcasts</title>
+    <title>Tu Título</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css">
+    
 </head>
 <body>
     <header>
         <div class="header-left">
-        <a href="#" class="logo">Tu Logo</a>
-        <nav class="main-nav">
-            <ul>
-                <li><a href="#">Inicio</a></li>
-            </ul>
-        </nav>
-    </div>
-    <div class="search-container">
-        <input type="text" placeholder="Buscar podcasts...">
-        <button type="submit" class="search-button"></button>
-    </div>
-    <div class="header-right">
-        <button class="logout-button">Cerrar Sesión</button>
-    </div>
-        </header>
+            <a href="#" class="logo">
+                <i class="ri-user-line user-perfil"></i>
+            </a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#"><i class="ri-home-line"></i> Inicio</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="search-container">
+            <form class="buscador-content">
+                <button type="submit" class="search-button-icon">
+                    <i class="ri-search-line search-icon"></i>
+                </button>
+                <input type="text" placeholder="Buscar podcasts..." class="search-input">
+            </form>
+        </div>
+        <div class="header-right">
+            <div class="logout-container">
+                <button class="settings-button">
+                    <i class="ri-settings-line"></i>
+                </button>
+                <div class="logout-options">
+                    <button class="logout-option">Cerrar Sesión</button>
+                </div>
+            </div>
+        </div>
+    </header>
 
     <div class="container">
         <aside class="sidebar">
-            </aside>
+            <ul>
+                <li><a href="#"><i class="ri-compass-line"></i> Explorar</a></li>
+                <li><a href="#"><i class="ri-heart-line"></i> Favoritos</a></li>
+                <li><a href="#"><i class="ri-play-list-line"></i> Listas</a></li>
+            </ul>
+        </aside>
 
-        <main class="content">
-            </main>
+        <main class="main-content">
+            <h1>Contenido Principal</h1>
+            <p>Este es el contenido principal de tu página.</p>
+        </main>
     </div>
 
     <footer>
-        </footer>
+        <p>&copy; 2025 Tu Plataforma</p>
+    </footer>
 
-    <script src="js/main.js"></script>
+    <script src="js/main.js" type="module"></script>
 </body>
 </html>

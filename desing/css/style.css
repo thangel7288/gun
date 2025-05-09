@@ -9,3 +9,26 @@
 @import 'footer.css';
 
 /* Aquí podrías importar otros archivos CSS para componentes, utilidades, etc. */
+body {
+    margin: 0;
+    font-family: sans-serif;
+    display: flex;
+    min-height: 100vh;
+    padding-top: 60px;
+}
+
+.container {
+    display: flex;
+    flex-grow: 1;
+    margin-left: 200px;
+    padding: 20px;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 80px;
+}
+
+.main-content {
+    text-align: center;
+}
