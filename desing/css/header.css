@@ -1,5 +1,5 @@
 header {
-    background-color: #ffffff;
+    background-color: #5cad87;
     color: rgb(255, 255, 255);
     padding: 1rem 2rem;
     display: flex;
@@ -195,4 +195,61 @@ header {
 
 .logout-options .logout-option:hover {
     background-color: #555;
+}
+
+/* Estilos para el contenedor del avatar */
+.avatar-container {
+    position: relative; /* Para que .profile-box se posicione relativamente a este contenedor */
+    width: 40px; /* Ancho deseado para el avatar */
+    height: 40px; /* Alto deseado para el avatar (puede ser igual al ancho para un círculo) */
+    margin-left: 1rem; /* Espacio entre el buscador/otros elementos y el avatar */
+    border-radius: 50%; /* Para hacerlo circular */
+    overflow: hidden; /* Recorta la imagen si excede el círculo */
+}
+
+/* Estilos para la caja del perfil (contiene la imagen) */
+/* Estilos para el enlace del avatar */
+.avatar-link {
+    display: inline-block; /* Para que el hover funcione en todo el contenedor */
+    margin-left: 1rem;
+    border-radius: 50%; /* Para mantener la forma circular del contenedor clickable */
+    overflow: hidden; /* Asegura que el efecto hover se mantenga dentro del círculo */
+    transition: transform 0.3s ease; /* Transición suave para el efecto */
+}
+
+.avatar-link:hover {
+    transform: scale(1.1); /* Escala al 110% al pasar el mouse */
+}
+
+/* Estilos para el contenedor del avatar (sin cambios importantes) */
+.avatar-container {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+/* Estilos para la caja del perfil (sin cambios importantes) */
+.profile-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Estilos para la imagen del avatar (sin cambios importantes) */
+.profile-box img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* Ajusta el header-right para alinear los elementos a la derecha */
+.header-right {
+    display: flex;
+    align-items: center;
 }

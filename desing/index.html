@@ -6,53 +6,117 @@
     <title>Tu Título</title>
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css">
-    
 </head>
 <body>
     <header>
-        <div class="header-left">
-            <a href="#" class="logo">
-                <i class="ri-user-line user-perfil"></i>
-            </a>
-            <nav class="main-nav">
-                <ul>
-                    <li><a href="#"><i class="ri-home-line"></i> Inicio</a></li>
-                </ul>
-            </nav>
-        </div>
-        <div class="search-container">
-            <form class="buscador-content">
-                <button type="submit" class="search-button-icon">
-                    <i class="ri-search-line search-icon"></i>
-                </button>
-                <input type="text" placeholder="Buscar podcasts..." class="search-input">
-            </form>
-        </div>
-        <div class="header-right">
-            <div class="logout-container">
-                <button class="settings-button">
-                    <i class="ri-settings-line"></i>
-                </button>
-                <div class="logout-options">
-                    <button class="logout-option">Cerrar Sesión</button>
+    <div class="header-left">
+        <a href="#" class="logo">
+            <i class="ri-user-line user-perfil"></i>
+        </a>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#"><i class="ri-home-line"></i> Inicio</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="search-container">
+        <form class="buscador-content">
+            <button type="submit" class="search-button-icon">
+                <i class="ri-search-line search-icon"></i>
+            </button>
+            <input type="text" placeholder="Buscar podcasts..." class="search-input">
+        </form>
+    </div>
+    <div class="header-right">
+        <a href="#" class="avatar-link">
+            <div class="avatar-container">
+                <div class="profile-box">
+                    <img src="https://i.pinimg.com/564x/d2/8d/02/d28d02d97f9c247636a720dfe36d6718.jpg" alt="Avatar de usuario">
                 </div>
             </div>
+        </a>
+        <div class="logout-container">
+            <button class="settings-button">
+                <i class="ri-settings-line"></i>
+            </button>
+            <div class="logout-options">
+                <button class="logout-option">Cerrar Sesión</button>
+            </div>
         </div>
-    </header>
+    </div>
+</header>
 
     <div class="container">
         <aside class="sidebar">
-            <ul>
-                <li><a href="#"><i class="ri-compass-line"></i> Explorar</a></li>
-                <li><a href="#"><i class="ri-heart-line"></i> Favoritos</a></li>
-                <li><a href="#"><i class="ri-play-list-line"></i> Listas</a></li>
-            </ul>
-        </aside>
+    <ul>
+        <li><a href="#" class="sidebar-link-animated"><i class="ri-home-line"></i> Inicio</a></li>
+        <li><a href="#" class="sidebar-link-animated"><i class="ri-compass-line"></i> Explorar</a></li>
+        <li><a href="#" class="sidebar-link-animated"><i class="ri-fire-line"></i> Tendencias</a></li>
+        <li><a href="#" class="sidebar-link-animated"><i class="ri-play-circle-line"></i> Recientes</a></li>
+        <li><a href="#" class="sidebar-link-animated"><i class="ri-heart-line"></i> Favoritos</a></li>
+        <li><a href="#" class="sidebar-link-animated"><i class="ri-download-line"></i> Descargas</a></li>
+        <li><a href="#" class="sidebar-link-animated"><i class="ri-history-line"></i> Historial</a></li>
+        <li>
+            <div class="logout-container-sidebar">
+                <button class="settings-button-sidebar">
+                    <i class="ri-settings-line"></i>
+                    <span>Settings</span>
+                </button>
+                <div class="logout-options-sidebar">
+                    <button class="logout-option-sidebar">Cerrar Sesión</button>
+                </div>
+            </div>
+        </li>
+    </ul>
+</aside>
 
         <main class="main-content">
-            <h1>Contenido Principal</h1>
-            <p>Este es el contenido principal de tu página.</p>
-        </main>
+    <h2>Peleadores Destacados de MMA</h2>
+    <div class="cards-container">
+        <div class="card">
+            <img src="https://www.pasandoguardia.com/wp-content/uploads/gsp-defeats-bisping-ufc-217-new-middleweight-champion-1.jpg" alt="Peleador 1">
+            <h3>Nombre del Peleador 1</h3>
+            <p>Récord: 27-2-0</p>
+            <p>Categoría: Peso Ligero</p>
+            <a href="#" class="button">Ver Perfil</a>
+        </div>
+        <div class="card">
+            <img src="https://c4.wallpaperflare.com/wallpaper/265/674/427/ufc-jon-jones-shirtless-squatting-wallpaper-preview.jpg" alt="Peleador 2">
+            <h3>Nombre del Peleador 2</h3>
+            <p>Récord: 29-1-0</p>
+            <p>Categoría: Peso Welter</p>
+            <a href="#" class="button">Ver Perfil</a>
+        </div>
+        <div class="card">
+            <img src="https://wallpapersok.com/images/high/anderson-silva-fists-ground-9vgwmbvyz4xcmljj.jpg" alt="Peleador 3">
+            <h3>Nombre del Peleador 3</h3>
+            <p>Récord: 16-1-0</p>
+            <p>Categoría: Peso Pluma</p>
+            <a href="#" class="button">Ver Perfil</a>
+        </div>
+        <div class="card">
+            <img src="https://wallpapers.com/images/hd/american-mixed-martial-artist-demetrious-johnson-0b8gylgym6150gwq.jpg" alt="Peleador 4">
+            <h3>Nombre del Peleador 4</h3>
+            <p>Récord: 34-4-0</p>
+            <p>Categoría: Peso Pesado</p>
+            <a href="#" class="button">Ver Perfil</a>
+        </div>
+        <div class="card">
+            <img src="https://images.alphacoders.com/138/1383353.png" alt="Peleador 5">
+            <h3>Nombre del Peleador 5</h3>
+            <p>Récord: 14-3-0</p>
+            <p>Categoría: Peso Gallo</p>
+            <a href="#" class="button">Ver Perfil</a>
+        </div>
+        <div class="card">
+            <img src="https://wallpapercat.com/w/full/2/4/3/65654-2048x1536-desktop-hd-conor-mcgregor-wallpaper.jpg" alt="Peleador 6">
+            <h3>Nombre del Peleador 6</h3>
+            <p>Récord: 22-7-0</p>
+            <p>Categoría: Peso Mediano</p>
+            <a href="#" class="button">Ver Perfil</a>
+        </div>
+    </div>
+</main>
     </div>
 
     <footer>

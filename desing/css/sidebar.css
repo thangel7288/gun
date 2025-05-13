@@ -1,9 +1,9 @@
 .sidebar {
     background-color: #f0f0f0;
     width: 200px;
-    height: calc(100vh - 60px);
+    height: calc(100vh - 60px); /* Altura del viewport menos la altura del header */
     position: fixed;
-    top: 60px;
+    top: 60px; /* Comienza debajo del header */
     left: 0;
     padding: 1rem;
     box-sizing: border-box;
@@ -37,3 +37,81 @@
     margin-right: 0.5rem;
     font-size: 1.1em;
 }
+
+/* Estilos para el menú de cerrar sesión en el sidebar (con el texto Settings) */
+.logout-container-sidebar {
+    position: relative;
+}
+
+.settings-button-sidebar {
+    background: none;
+    color: #333; /* Color del icono y el texto */
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    font-size: 1em; /* Ajusta el tamaño del texto si es necesario */
+    outline: none;
+    transition: transform 0.3s ease-in-out;
+    display: flex; /* Para alinear el icono y el texto */
+    align-items: center; /* Centrar verticalmente el icono y el texto */
+}
+
+.settings-button-sidebar:hover {
+    transform: rotate(30deg);
+}
+
+.settings-button-sidebar i {
+    font-size: 1.2em;
+    margin-right: 0.3rem; /* Espacio entre el icono y el texto */
+    vertical-align: middle;
+}
+
+.settings-button-sidebar span {
+    vertical-align: middle; /* Alinear verticalmente el texto con el icono */
+}
+
+.logout-options-sidebar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    border: 1px solid #555;
+    border-top: none;
+    border-radius: 5px;
+    display: none;
+    z-index: 10;
+    min-width: 120px;
+}
+
+.logout-options-sidebar.show {
+    display: block;
+}
+
+.logout-options-sidebar .logout-option-sidebar {
+    display: block;
+    width: 100%;
+    padding: 0.8rem 1.5rem;
+    background: none;
+    color: white;
+    border: none;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+}
+
+.logout-options-sidebar .logout-option-sidebar:hover {
+    background-color: #555;
+}
+
+/* Estilo para la animación de los enlaces del sidebar */
+.sidebar-link-animated:hover i {
+    transform: rotate(30deg);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Estilo para la animación del botón de Settings */
+/* Podrías quitar esta regla si la transición en .settings-button-sidebar es suficiente */
+/* .settings-button-sidebar:hover i {
+/* transform: rotate(30deg);
+/* transition: transform 0.3s ease-in-out;
+/* } */
